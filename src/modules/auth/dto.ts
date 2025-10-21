@@ -1,7 +1,7 @@
-import { t } from "elysia";
+import { t } from 'elysia';
 
 export const RegisterBody = t.Object({
-  email: t.String({ format: "email" }),
+  email: t.String({ format: 'email' }),
   password: t.String({ minLength: 8 }),
 });
 

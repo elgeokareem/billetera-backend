@@ -6,21 +6,31 @@
     "dev": "bun run --watch src/index.ts",
     "lint": "eslint src --ext .ts",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:push": "drizzle-kit push:pg"
   },
   "dependencies": {
     "arktype": "^2.1.23",
-    "elysia": "latest"
+    "drizzle-kit": "^0.31.5",
+    "drizzle-orm": "^0.44.6",
+    "elysia": "latest",
+    "pg": "^8.16.3"
   },
   "devDependencies": {
-    "bun-types": "latest",
-    "eslint": "latest",
-    "@typescript-eslint/parser": "latest",
+    "@eslint/js": "^9.38.0",
+    "@types/pg": "^8.15.5",
     "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "bun-types": "latest",
+    "eslint": "^9.38.0",
+    "eslint-config-prettier": "latest",
     "eslint-plugin-import": "latest",
     "eslint-plugin-unused-imports": "latest",
+    "globals": "^16.4.0",
+    "jiti": "^2.6.1",
     "prettier": "latest",
-    "eslint-config-prettier": "latest"
+    "typescript-eslint": "^8.46.1"
   },
   "module": "src/index.js"
 }
